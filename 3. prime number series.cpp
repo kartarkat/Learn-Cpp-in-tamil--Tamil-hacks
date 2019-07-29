@@ -1,0 +1,68 @@
+/*
+author : karthikeyan 
+year and month : 2019 , july
+Learn c++ in tamil from Tamil Hacks - You Tube channel
+Tutorial links : 
+	Learn c++ in tamil : http://bit.ly/2Mpvqj8
+	Learn c   in tamil : http://bit.ly/2ZjDB43
+
+c++ program to print the prime number series
+
+A prime number is a whole number greater than 1 whose only factors are 1 and itself. 
+A factor is a whole numbers that can be divided evenly into another number. 
+The first few prime numbers are 2, 3, 5, 7, 11, 13, 17, 19, 23 ,29 and so on
+*/
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+int main()
+{
+	//initialize number to 0 to avoid garbage value
+	int series_range = 0 ; 
+	int isPrime ;    //a variable to check prime number 
+	cout<<"Enter a positive number : "; 
+	//get series range from the user
+	cin>>series_range;  
+	
+
+	for (int strating_value = 2 ; strating_value <= series_range ; strating_value++)
+	{   
+	 //prime number starts at 2 , so strating_value =2 
+	//printing series upto given series range  so it is the condition value eg: prime number between 1 to 25
+	
+	isPrime = 0;
+	
+		for (int diving_value = 2 ; diving_value <= strating_value / 2 ;  diving_value++)
+        {        	
+        	//checking any number is diving than itself and 1
+            if (strating_value % diving_value == 0) 
+			{			
+            	isPrime = 1;
+                break;
+            }
+        }            
+            //printing each value which is prime number except 1
+            if(isPrime==0 && series_range!= 1)
+            cout << strating_value << " ";
+		
+	}
+	
+		
+		//note : 1 and 0 and negative values are not a prime number
+	
+		return 0;
+		
+
+}
+
+/*
+Hi FRIENDS, Welcome to my page , i am an technician , who loves to code  , 
+do videos, make apps, websites, learn something new every day.
+
+my youtube channel link : https://www.youtube.com/tamilhacks
+
+learn all new technology and programming here in my channel in tamil easily.
+Thank you Guys - with love from Tamil Hacks
+contact me at tamilhackstech@gmail.com
+*/
