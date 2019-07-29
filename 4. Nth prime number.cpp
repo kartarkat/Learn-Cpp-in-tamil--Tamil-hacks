@@ -29,8 +29,6 @@ int main()
 	//a variable to count the n terms
 	int count = 0;
 	
-	  
-	
 
 	for (int strating_value = 2 ; strating_value <= series_range ; strating_value++)
 	{   
@@ -58,13 +56,11 @@ int main()
 				}
             }
 		
-	}
-	
+	}	
 
 		//note : 1 and 0 and negative values are not a prime number
 	
-		return 0;
-		
+		return 0;		
 
 }
 
