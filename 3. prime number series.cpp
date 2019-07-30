@@ -26,17 +26,17 @@ int main()
 	cin>>series_range;  
 	
 
-	for (int strating_value = 2 ; strating_value <= series_range ; strating_value++)
+	for (int starting_value = 2 ; starting_value <= series_range ; starting_value++)
 	{   
 	 //prime number starts at 2 , so strating_value =2 
 	//printing series upto given series range  so it is the condition value eg: prime number between 1 to 25
 	
 	isPrime = 0;
 	
-		for (int diving_value = 2 ; diving_value <= strating_value / 2 ;  diving_value++)
+		for (int dividing_value = 2 ; dividing_value <= starting_value / 2 ;  dividing_value++)
         {        	
         	//checking any number is diving than itself and 1
-            if (strating_value % diving_value == 0) 
+            if (starting_value % dividing_value == 0) 
 			{			
             	isPrime = 1;
                 break;
@@ -44,7 +44,7 @@ int main()
         }            
             //printing each value which is prime number except 1
             if(isPrime==0 && series_range!= 1)
-            cout << strating_value << " ";
+            cout << starting_value << " ";
 		
 	}
 	
